@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitcoin-test-agent"
+version = "0.1.1"
+description = "Local autonomous agent scaffold with cloud LLM gateway and guarded trading config"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.111.0",
+  "uvicorn>=0.30.0",
+  "pydantic>=2.7.0",
+  "pydantic-settings>=2.3.0",
+  "openai>=1.40.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[tool.setuptools]
+packages = ["agent_core", "api", "memory", "policy", "tooling", "trading"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
