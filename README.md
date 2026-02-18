@@ -25,6 +25,8 @@ Requires Python 3.10+ and internet access for first-time dependency install.
 
 ```bash
 python3 -m venv .venv
+```bash
+python -m venv .venv
 source .venv/bin/activate
 pip install -e .[dev]
 cp .env.example .env
@@ -39,3 +41,9 @@ Then check:
 
 ## Environment
 Use `.env` (see `.env.example`) for secrets and overrides.
+Starter repo for building a local autonomous AI agent that uses cloud LLMs and can be extended for real-time trading workflows.
+
+## Start here
+
+Read the bootstrap plan:
+- [PROJECT_BOOTSTRAP.md](./PROJECT_BOOTSTRAP.md)
