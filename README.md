@@ -21,6 +21,10 @@ This repository now includes a runnable Milestone-0 style code scaffold:
 - Dashboard in all versions: **enabled flag set true**
 
 ## Quick start
+Requires Python 3.10+ and internet access for first-time dependency install.
+
+```bash
+python3 -m venv .venv
 ```bash
 python -m venv .venv
 source .venv/bin/activate
